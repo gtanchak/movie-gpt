@@ -6,7 +6,7 @@ const Login = () => {
   return (
     <main className="bg-black relative h-screen z-0">
       <div className="absolute bg-cover h-screen overflow-hidden -z-10 opacity-50">
-        <img src="https://assets.nflxext.com/ffe/siteui/vlv3/8728e059-7686-4d2d-a67a-84872bd71025/e90516bd-6925-4341-a6cf-0b9f3d0c140a/IN-en-20240708-POP_SIGNUP_TWO_WEEKS-perspective_WEB_34324b52-d094-482b-8c2a-708dc64c9065_large.jpg" />
+        <img src="/movie-bg.jpeg" />
       </div>
       <Header />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2/6 py-5 px-20 bg-black/60">
