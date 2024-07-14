@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
-import { Button, Header } from "../../components";
+import { Header } from "../../components";
 import { appRputes } from "../../routes/routeConst";
+import useLogin from "./useLogin";
 
 const Login = () => {
+  const { email, setEmail, password, setPassword, handleSigninClick } =
+    useLogin();
   return (
     <main className="bg-black relative h-screen z-0">
       <div className="absolute bg-cover h-screen overflow-hidden -z-10 opacity-50">
@@ -13,18 +16,25 @@ const Login = () => {
         <h1 className="text-2xl mb-5 text-white ">Sign In</h1>
         <form className="flex flex-col gap-4">
           <input
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             type="email"
             placeholder="Email"
             className="px-3 py-3.5 bg-transparent border border-gray-500 rounded-sm outline-none text-white"
           />
           <input
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
             type="password"
             placeholder="Password"
             className="px-3 py-3.5 bg-transparent border border-gray-500 rounded-sm outline-none text-white"
           />
-          <Button className="bg-primary text-white py-2 rounded-sm">
+          <button
+            onClick={handleSigninClick}
+            className="bg-primary text-white py-2 rounded-sm"
+          >
             Sign In
-          </Button>
+          </button>
         </form>
         <div className="mt-10">
           <p className="text-gray-400">
