@@ -1,3 +1,7 @@
+:root {
+  --font-geist-sans: GeistSans;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
