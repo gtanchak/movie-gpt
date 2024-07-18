@@ -8,7 +8,7 @@ function App() {
     <>
       <BrowserRouter>
         <Router />
-        <ToastContainer theme="dark" />
+        <ToastContainer theme="dark" autoClose={2000} />
       </BrowserRouter>
     </>
   );
