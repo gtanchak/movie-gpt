@@ -1,5 +1,5 @@
 import { useRoutes } from "react-router-dom";
-import { Browse, Login, SignUp } from "../pages";
+import { Admin, Browse, Login, SignUp } from "../pages";
 import { appRputes } from "./routeConst";
 
 export const Router = () => {
@@ -10,6 +10,7 @@ export const Router = () => {
         { path: appRputes.login, element: <Login /> },
         { path: appRputes.signUp, element: <SignUp /> },
         { path: appRputes.browse, element: <Browse /> },
+        { path: appRputes.admin, element: <Admin /> },
       ],
     },
   ]);
