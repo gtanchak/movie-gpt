@@ -3,4 +3,5 @@ export const appRputes = {
   login: "/login",
   signUp: "/sign-up",
   browse: "/browse",
+  admin: "/admin",
 };
